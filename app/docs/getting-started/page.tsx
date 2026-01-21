@@ -105,7 +105,7 @@ export default function GettingStarted() {
         </div>
 
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          <div className="grid lg:grid-cols-[1fr_250px] gap-12">
+          <div className="grid w-[100%] overflow-scroll lg:grid-cols-[1fr_250px] gap-12">
             {/* Main content */}
             <MotionDiv
               initial={{ opacity: 0, y: 20 }}
