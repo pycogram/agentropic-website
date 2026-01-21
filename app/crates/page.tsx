@@ -96,14 +96,14 @@ export default function CratesPage() {
             className="text-center mb-16"
           >
             <h1 className="text-4xl font-bold mb-4">Crates</h1>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-xl text-start text-muted-foreground max-w-2xl mx-auto">
               Agentropic is built as a polyrepo of independent crates. Use only what you need,
               or combine them for a complete multi-agent framework.
             </p>
           </MotionDiv>
 
           {/* Status legend */}
-          <div className="flex justify-center gap-6 mb-12">
+          <div className="grid grid-cols-1 sm:flex justify-center gap-6 mb-12">
             <div className="flex items-center gap-2">
               <span className="crate-badge stable">Stable</span>
               <span className="text-sm text-muted-foreground">Production ready</span>
