@@ -62,7 +62,7 @@ export const metadata: Metadata = {
       "Build intelligent, autonomous multi-agent systems with Rust. Production-ready framework for blockchain, trading, IoT, and enterprise automation.",
     images: [
       {
-        url: "/assets/ag-logo.png",  // Using existing logo for now
+        url: "/assets/ag-logo.png",  
         width: 1200,
         height: 630,
         alt: "Agentropic - Multi-Agent Systems Framework",
@@ -221,12 +221,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
+        <ThemeProvider defaultTheme="system" storageKey="agentropic-theme">
           {children}
         </ThemeProvider>
       </body>
