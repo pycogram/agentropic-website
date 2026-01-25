@@ -3,6 +3,7 @@ import { ChevronRight, CheckCircle2, Circle, Clock, Github } from 'lucide-react'
 import { Layout } from '@/components/layout/Layout';
 import { Button } from '@/components/ui/button';
 import { MotionDiv } from '@/components/framer/motion';
+import type { Metadata } from "next";
 
 interface RoadmapItem {
   name: string;
@@ -89,6 +90,12 @@ const statusConfig = {
   done: { icon: CheckCircle2, color: 'text-emerald-500', bg: 'bg-emerald-500' },
   'in-progress': { icon: Clock, color: 'text-amber-500', bg: 'bg-amber-500' },
   planned: { icon: Circle, color: 'text-muted-foreground', bg: 'bg-muted-foreground/30' },
+};
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "https://agentropic.org/roadmap",
+  },
 };
 
 export default function RoadmapPage() {

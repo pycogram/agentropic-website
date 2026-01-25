@@ -114,10 +114,7 @@ export const metadata: Metadata = {
     },
   },
 
-  // Other
-  alternates: {
-    canonical: "https://agentropic.org",
-  },
+  // Canonical removed - will be set per page as needed
   category: "technology",
   classification: "Software Framework",
 };

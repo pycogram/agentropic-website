@@ -3,6 +3,7 @@ import { ChevronRight } from 'lucide-react';
 import { Layout } from '@/components/layout/Layout';
 import { CrateCard, CrateStatus } from '@/components/CrateCard';
 import { MotionDiv } from '@/components/framer/motion';
+import type { Metadata } from "next";
 
 interface CrateInfo {
   name: string;
@@ -70,6 +71,13 @@ const crates: CrateInfo[] = [
     href: '/crates/macros',
   },
 ];
+
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "https://agentropic.org/crates",
+  },
+};
 
 export default function CratesPage() {
   return (

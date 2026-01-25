@@ -19,6 +19,7 @@ import { Button } from '@/components/ui/button';
 import { Layout } from '@/components/layout/Layout';
 import { FeatureCard } from '@/components/FeatureCard';
 import { CodeBlock } from '@/components/CodeBlock';
+import type { Metadata } from "next";
 
 
 const features = [
@@ -91,7 +92,13 @@ const roadmapItems = [
   { name: 'agentropic-deploy', status: 'planned' },
 ];
 
-export default function Index() {
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "https://agentropic.org",
+  },
+};
+
+export default function Home() {
   return (
     <Layout>
       {/* Hero Section */}

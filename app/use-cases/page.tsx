@@ -2,6 +2,8 @@ import Link from 'next/link';
 import { ChevronRight, Blocks, Wallet, Truck, Bot, Server, FileCode } from 'lucide-react';
 import { Layout } from '@/components/layout/Layout';
 import { MotionDiv } from '@/components/framer/motion';
+import type { Metadata } from "next";
+
 
 const useCases = [
   {
@@ -71,6 +73,12 @@ const useCases = [
     ],
   },
 ];
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "https://agentropic.org/use-cases",
+  },
+};
 
 export default function UseCasesPage() {
   return (

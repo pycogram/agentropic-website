@@ -4,6 +4,7 @@ import { Layout } from '@/components/layout/Layout';
 import { CodeBlock } from '@/components/CodeBlock';
 import { Badge } from '@/components/ui/badge';
 import { MotionDiv } from '@/components/framer/motion';
+import type { Metadata } from "next";
 
 interface Example {
   title: string;
@@ -120,6 +121,12 @@ const examples: Example[] = [
     blackboard.post(RawData::new(sensor_reading)).await?;`,
   },
 ];
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "https://agentropic.org/examples",
+  },
+};
 
 export default function ExamplesPage() {
   return (

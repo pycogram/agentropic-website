@@ -3,6 +3,7 @@ import { ChevronRight, Book, Code, Cpu, ArrowRight } from 'lucide-react';
 import { Layout } from '@/components/layout/Layout';
 import { CodeBlock } from '@/components/CodeBlock';
 import { MotionDiv } from '@/components/framer/motion';
+import type { Metadata } from "next";
 
 const tocItems = [
   { id: 'installation', label: 'Installation' },
@@ -82,6 +83,12 @@ async fn main() -> Result<()> {
     
     Ok(())
 }`;
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "https://agentropic.org/docs/getting-started",
+  },
+};
 
 export default function GettingStarted() {
   return (

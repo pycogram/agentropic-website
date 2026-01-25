@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { ChevronRight, ArrowRight, BookOpen, Code, Cpu, Network } from 'lucide-react';
 import { Layout } from '@/components/layout/Layout';
 import { MotionDiv } from '@/components/framer/motion';
+import type { Metadata } from "next";
 
 const docSections = [
   {
@@ -32,6 +33,12 @@ const docSections = [
     href: '#'
   },
 ];
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "https://agentropic.org/docs",
+  },
+};
 
 export default function DocsIndex() {
   return (
