@@ -154,9 +154,9 @@ const copyToClipboard = () => {
                   className="p-2 rounded-xl bg-primary/20 border-gray-300 border hover:bg-primary/30 transition-colors flex-shrink-0"
                 >
                   {copied ? (
-                    <Check className="w-4 h-4 text-success" />
+                    <Check className="w-3 h-3 md:w-4 md:h-4 text-success" />
                   ) : (
-                    <Copy className="w-4 h-4 text-dark" />
+                    <Copy className="w-3 h-3 md:w-4 md:h-4 text-dark" />
                   )}
                 </button>
               </div>
