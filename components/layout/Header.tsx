@@ -10,12 +10,12 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 const navItems = [
-  { label: 'Chat', href: '/chat' },
+  { label: 'Products', href: '/products' },
   { label: 'Docs', href: '/docs' },
   { label: 'Crates', href: '/crates' }, 
   { label: 'Examples', href: '/examples' },
   { label: 'Use Cases', href: '/use-cases' },
-  { label: 'Roadmap', href: '/roadmap' }
+  { label: 'RM', href: '/roadmap' }
 ];
 
 export function Header() {
@@ -63,7 +63,7 @@ export function Header() {
               <Link
                 key={item.href}
                 href={item.href}
-                className={`nav-link px-4 py-2 rounded-md text-sm font-medium transition-colors ${
+                className={`nav-link px-2 lg:px-4 py-2 rounded-md text-sm font-medium transition-colors ${
                   isActive(item.href) ? 'active' : ''
                 }`}
               >
@@ -86,9 +86,9 @@ export function Header() {
               </Button>
             </a>
 
-            <Link href="/docs/getting-started" className="hidden md:block">
+            <Link href="/chat" className="hidden md:block">
               <Button variant="default" size="sm">
-                Get Started
+                Chat
                 <ExternalLink className="ml-1 h-3 w-3" />
               </Button>
             </Link>
